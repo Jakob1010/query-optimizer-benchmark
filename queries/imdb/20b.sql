@@ -1,4 +1,4 @@
-SELECT MIN(title) AS complete_downey_ironman_movie
+SELECT MIN(t.title) AS complete_downey_ironman_movie
 FROM
 postgresql('localhost:5432', 'imdb', 'complete_cast', 'imdb', 'imdb', 'public') AS cc,
 postgresql('localhost:5432', 'imdb', 'comp_cast_type', 'imdb', 'imdb', 'public') AS cct1,
